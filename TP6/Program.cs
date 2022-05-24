@@ -3,7 +3,6 @@ Console.WriteLine("Hello, World!");
 
 Calculadora calc = new Calculadora(0);
 
-
 Console.WriteLine(calc.resultado);
 
 int opcion=10;
@@ -29,11 +28,7 @@ do
             calc.Multiplicar(valor);
             break;
         case 4:
-            if(valor!=0){
-                calc.Dividir(valor);
-            }else{
-                Console.WriteLine("ERROR! Para dividir dos numeros el segundo debe ser distinto de cero");
-            }
+            calc.Dividir(valor);
             break;
         case 5: 
             calc.resultado=0;

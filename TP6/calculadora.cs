@@ -19,7 +19,11 @@ public class Calculadora
     }
     public void Dividir(double valor)
     {
-        resultado = resultado/valor;
+        if(valor!=0){
+            resultado = resultado/valor;
+        }else{
+            Console.WriteLine("no se puede dividir en 0");
+        }
     }
 
 }
